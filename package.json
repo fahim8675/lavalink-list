@@ -1,16 +1,16 @@
 {
-  "name": "lavalink-list-new",
+  "name": "lavalink-list",
   "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
   "scripts": {
-    "build": "turbo build",
-    "start": "turbo start",
-    "dev": "turbo dev",
-    "format": "turbo format",
-    "lint": "turbo lint"
+    "build": "npm --prefix apps/web run build",
+    "start": "npm --prefix apps/web run start",
+    "dev": "npm --prefix apps/web run dev",
+    "lint": "npm --prefix apps/web run lint"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.3",
-    "turbo": "^2.1.3",
     "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@9.11.0",

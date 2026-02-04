@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleQuestion, faLock, faLockOpen, faSquarePlus } from '@fortawesome/free-solid-svg-icons';
+import ServerList from '@/components/home/ServerList';
 
 export default function Home() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <>
+      <ServerList />
       <div className="z-10 w-full max-w-6xl mx-auto px-4 md:px-6 py-10">
         <div className="px-5 xl:px-0 mx-auto">
           <h1
