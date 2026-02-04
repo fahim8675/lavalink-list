@@ -4,9 +4,9 @@
   "description": "Lavalink List",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 8080",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start --port 8080",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
